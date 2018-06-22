@@ -1,0 +1,102 @@
+<!-- ITI-18 Registry Document Query Request -->
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+	<s:Header>
+		<a:Action s:mustUnderstand="1">urn:ihe:iti:2007:RegistryStoredQuery</a:Action>
+		<a:MessageID>urn:uuid:66eb648a-ec5c-4d67-9429-90c44e4ddd1e</a:MessageID>
+		<a:ReplyTo>
+			<a:Address>http://www.w3.org/2005/08/addressing/anonymous</a:Address>
+		</a:ReplyTo>
+		<a:To s:mustUnderstand="1">http://vnaxdstest.ihe.edu:8086/CCA-TEST/unsecured_webservices/xdsb/documentRegistry/iti18RegistryStoredQuery</a:To>
+	</s:Header>
+	<s:Body>
+		<AdhocQueryRequest xmlns="urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0">
+			<query:ResponseOption returnComposedObjects="true" returnType="ObjectRef" xmlns:query="urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0"/>
+			<rim:AdhocQuery id="urn:uuid:14d4debf-8f97-4251-9a74-a90016b0af0d" xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0">
+				<rim:Slot name="$XDSDocumentEntryStatus">
+					<rim:ValueList>
+						<rim:Value>('urn:oasis:names:tc:ebxml-regrep:StatusType:Approved')</rim:Value>
+					</rim:ValueList>
+				</rim:Slot>
+				<rim:Slot name="$XDSDocumentEntryPatientId">
+					<rim:ValueList>
+						<rim:Value>'51229243^^^&amp;2.16.840.1.113883.3.552.1.3.11.1.1.8.1&amp;ISO'</rim:Value>
+					</rim:ValueList>
+				</rim:Slot>
+				<rim:Slot name="$XDSDocumentEntryCreationTimeFrom">
+					<rim:ValueList>
+						<rim:Value>20180405231817</rim:Value>
+					</rim:ValueList>
+				</rim:Slot>
+			</rim:AdhocQuery>
+		</AdhocQueryRequest>
+	</s:Body>
+</s:Envelope>
+
+<!-- ITI-18 Registry Document Query Response -->
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
+	<soap:Header>
+		<Action xmlns="http://www.w3.org/2005/08/addressing">urn:ihe:iti:2007:RegistryStoredQueryResponse</Action>
+		<MessageID xmlns="http://www.w3.org/2005/08/addressing">urn:uuid:55bdb345-5f4a-4884-8cb9-21883af1a260</MessageID>
+		<To xmlns="http://www.w3.org/2005/08/addressing">http://www.w3.org/2005/08/addressing/anonymous</To>
+		<RelatesTo xmlns="http://www.w3.org/2005/08/addressing">urn:uuid:66eb648a-ec5c-4d67-9429-90c44e4ddd1e</RelatesTo>
+	</soap:Header>
+	<soap:Body>
+		<ns6:AdhocQueryResponse xmlns:ns6="urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0" xmlns:ns5="urn:oasis:names:tc:ebxml-regrep:xsd:lcm:3.0" xmlns:ns4="urn:ihe:iti:xds-b:2007" xmlns:ns3="urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0" xmlns:ns2="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" status="urn:oasis:names:tc:ebxml-regrep:ResponseStatusType:Success">
+			<ns2:RegistryObjectList>
+				<ns2:ObjectRef id="urn:uuid:8268d34b-bff3-48c2-92ee-a299a2f33f70" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+				<ns2:ObjectRef id="urn:uuid:9070fb5f-8169-4677-a331-0adffef9edd7" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+				<ns2:ObjectRef id="urn:uuid:10a89426-fcf5-40c9-ab30-ec6b09e5e249" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+				<ns2:ObjectRef id="urn:uuid:ed1f5376-023f-4878-8f36-ff437641973c" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+				<ns2:ObjectRef id="urn:uuid:837f954d-7b75-44f0-a04a-68f21c171747" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+				<ns2:ObjectRef id="urn:uuid:2ab16fac-99c2-46b2-b09a-19e20442f0d8" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+				<ns2:ObjectRef id="urn:uuid:ccaa97db-2fe6-4725-aa10-fcb0e3041dc8" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+				<ns2:ObjectRef id="urn:uuid:fd2d1ae4-d833-4c46-b6eb-e90c950f5bf9" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+				<ns2:ObjectRef id="urn:uuid:b0a23cfa-477d-44dc-a3b2-f8ed4298c2b9" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+				<ns2:ObjectRef id="urn:uuid:74a268df-e541-4953-b766-64eb53d613bf" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+				<ns2:ObjectRef id="urn:uuid:aa50ad55-3de5-4efe-b5fd-9e1515559cef" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+				<ns2:ObjectRef id="urn:uuid:60b6bae5-280c-4795-9d13-abbe0d678d2b" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+				<ns2:ObjectRef id="urn:uuid:b9296472-a73e-414d-97d9-f8a4fcab21c5" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+				<ns2:ObjectRef id="urn:uuid:21df3531-0295-4586-9b7e-a356d87489d3" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+				<ns2:ObjectRef id="urn:uuid:7e8342c0-4406-443a-990b-1b32a2dc5bb0" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+				<ns2:ObjectRef id="urn:uuid:8e0d1fa2-003d-4c02-a045-5ab3c8ab9bf6" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+				<ns2:ObjectRef id="urn:uuid:2a1dcc76-c7b3-4ffd-a2b2-1a61adfaed16" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+				<ns2:ObjectRef id="urn:uuid:0b436171-b63a-417f-a84a-17339228ea0d" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+				<ns2:ObjectRef id="urn:uuid:bbae2b39-a228-4908-8289-faff37ba13a1" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+				<ns2:ObjectRef id="urn:uuid:a01cc50c-4970-45b5-9911-502c9d2a48a2" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+				<ns2:ObjectRef id="urn:uuid:4b0b9633-db32-4ea9-92e2-79223b01a5f6" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+				<ns2:ObjectRef id="urn:uuid:3da25671-1c05-4e8f-ba35-73f4f51a5c7e" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+				<ns2:ObjectRef id="urn:uuid:4640c808-6683-4117-99fd-ea49327cb009" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+				<ns2:ObjectRef id="urn:uuid:9cbe64f8-b1df-4bf0-8e05-071e75f2c906" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+				<ns2:ObjectRef id="urn:uuid:9e15889b-3787-4dfc-aa26-adadc6b8bc5b" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+				<ns2:ObjectRef id="urn:uuid:3e90429a-8b72-4473-8a3f-0d7800db24f7" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+				<ns2:ObjectRef id="urn:uuid:056d5051-3591-4d14-9917-f540c4fb7864" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+				<ns2:ObjectRef id="urn:uuid:964b0334-cdc9-4655-80e0-960ee15bbd8e" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+				<ns2:ObjectRef id="urn:uuid:f18f2e4f-f99d-43d3-b069-51410f6dc665" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+				<ns2:ObjectRef id="urn:uuid:f082dd13-a277-4cda-b8b7-7233d17fd25e" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+				<ns2:ObjectRef id="urn:uuid:806606c1-b7c7-4f28-8d93-4dbefa6a1062" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+				<ns2:ObjectRef id="urn:uuid:ba290b52-f8e9-4db3-b24a-56530d6e0e3c" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+				<ns2:ObjectRef id="urn:uuid:21017cba-829f-4362-823b-d27771d1c623" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+				<ns2:ObjectRef id="urn:uuid:cde1d83b-da07-4db0-87ee-b26026848edb" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+				<ns2:ObjectRef id="urn:uuid:42bea9c6-9a66-452a-b07a-2e4b5126a621" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+				<ns2:ObjectRef id="urn:uuid:56f41b2b-2e11-4046-a2e7-dbe79e328e01" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+				<ns2:ObjectRef id="urn:uuid:2329dda7-dc48-4c33-9c49-9a116f1323e7" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+				<ns2:ObjectRef id="urn:uuid:801635d9-cbe3-4247-8aa0-ddf53eaa66c1" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+				<ns2:ObjectRef id="urn:uuid:a4abcf4f-045f-4a51-8fa8-fae8083b4a45" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+				<ns2:ObjectRef id="urn:uuid:4477af0f-62f7-4cf7-af1f-cf149490da66" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+				<ns2:ObjectRef id="urn:uuid:438da394-dcf5-4656-92fe-355d68b67035" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+				<ns2:ObjectRef id="urn:uuid:16715af7-6ef3-4b8a-9106-e49dc80f7597" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+				<ns2:ObjectRef id="urn:uuid:eccf0d0b-660b-49ed-b391-2af7b293446b" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+				<ns2:ObjectRef id="urn:uuid:9141ea7b-cb63-490c-8822-641b9450e5e2" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+				<ns2:ObjectRef id="urn:uuid:45febc26-ceff-4564-a6d1-4bc1870a411c" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+				<ns2:ObjectRef id="urn:uuid:bb21e1ed-5365-4996-bc7c-9051af095631" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+				<ns2:ObjectRef id="urn:uuid:dd8dd831-4c1a-41db-b476-a0f7d9bd239b" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+				<ns2:ObjectRef id="urn:uuid:28a0cbe8-9655-4ffa-8448-134bf0328b5e" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+				<ns2:ObjectRef id="urn:uuid:d50e9f07-9a29-42b9-b435-b950cd66d0ef" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+				<ns2:ObjectRef id="urn:uuid:32e46a6e-e805-48e9-aefe-fcf6bc37a84a" home="urn:oid:2.16.840.1.113883.3.552.1.3.13.100.1.100.2.9.1"/>
+			</ns2:RegistryObjectList>
+		</ns6:AdhocQueryResponse>
+	</soap:Body>
+</soap:Envelope>
+
+
+

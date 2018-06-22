@@ -1,0 +1,129 @@
+<!-- ITI-42 Retrieve Document Set Query Request -->
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+	<s:Header>
+		<a:Action s:mustUnderstand="1">urn:ihe:iti:2007:RetrieveDocumentSet</a:Action>
+		<a:MessageID>urn:uuid:3375dc5e-2c83-4dae-8700-292283f4bfa0</a:MessageID>
+		<a:ReplyTo>
+			<a:Address>http://www.w3.org/2005/08/addressing/anonymous</a:Address>
+		</a:ReplyTo>
+		<a:To s:mustUnderstand="1">http://10.25.165.198/ea-service/XdsRepository</a:To>
+	</s:Header>
+	<s:Body>
+		<RetrieveDocumentSetRequest xmlns="urn:ihe:iti:xds-b:2007">
+			<ihe:DocumentRequest xmlns:ihe="urn:ihe:iti:xds-b:2007">
+				<ihe:HomeCommunityId>urn:oid:2.16.840.1.113883.3.999.1.3.13.100.1.100.2.9.1</ihe:HomeCommunityId>
+				<ihe:RepositoryUniqueId>2.16.840.1.113883.3.999.1.3.13.100.1.100.2.2.1</ihe:RepositoryUniqueId>
+				<ihe:DocumentUniqueId>2.25.107044332017011568138495412478299892335</ihe:DocumentUniqueId>
+			</ihe:DocumentRequest>
+		</RetrieveDocumentSetRequest>
+	</s:Body>
+</s:Envelope>
+
+<!-- ITI-42 Retrieve Document Set Query Response -->
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+	<s:Header>
+		<a:Action s:mustUnderstand="1">urn:ihe:iti:2007:RetrieveDocumentSetResponse</a:Action>
+		<a:RelatesTo>urn:uuid:3375dc5e-2c83-4dae-8700-292283f4bfa0</a:RelatesTo>
+	</s:Header>
+	<s:Body>
+		<RetrieveDocumentSetResponse xmlns="urn:ihe:iti:xds-b:2007">
+			<rs:RegistryResponse status="urn:oasis:names:tc:ebxml-regrep:ResponseStatusType:Success" xmlns:rs="urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0"/>
+			<ihe:DocumentResponse xmlns:ihe="urn:ihe:iti:xds-b:2007">
+				<ihe:RepositoryUniqueId>2.16.840.1.113883.3.999.1.3.13.100.1.100.2.2.1</ihe:RepositoryUniqueId>
+				<ihe:DocumentUniqueId>2.25.107044332017011568138495412478299892335</ihe:DocumentUniqueId>
+				<ihe:mimeType>text/xml</ihe:mimeType>
+				<ihe:Document>
+					<xop:Include href="cid:http://tempuri.org/1/636652672916412645" xmlns:xop="http://www.w3.org/2004/08/xop/include"/>
+				</ihe:Document>
+			</ihe:DocumentResponse>
+		</RetrieveDocumentSetResponse>
+	</s:Body>
+</s:Envelope>
+<ClinicalDocument xmlns="urn:hl7-org:v3">
+	<typeId extension="POCD_HD000040" root="2.16.840.1.113883.1.3" />
+	<id root="2.25.107044332017011568138495412478299892335" />
+	<code code="34138-8" displayName="KEY_XDSSUBMISSION_TYPE_CODE_DISPLAY" codeSystem="LOINC" />
+	<title>Clinical Attributes Report</title>
+	<effectiveTime value="20180510" />
+	<languageCode code="en-US" />
+	<recordTarget>
+		<patientRole>
+			<id extension="51229243" root="2.16.840.1.113883.3.999.1.3.11.1.1.8.1" />
+			<patient>
+				<name>
+					<family>VNAMIGRATION</family>
+					<given>SHARON</given>
+				</name>
+				<administrativeGenderCode code="F" displayName="Female" />
+				<birthTime value="19671001" />
+			</patient>
+		</patientRole>
+	</recordTarget>
+	<confidentialityCode code="N" displayName="Normal" codeSystem="2.16.840.1.113883.5.25" />
+	<custodian>
+		<assignedCustodian>
+			<representedCustodianOrganization>
+				<id nullFlavor="UNK" />
+			</representedCustodianOrganization>
+		</assignedCustodian>
+	</custodian>
+	<author>
+		<time value="20180510" />
+		<assignedAuthor>
+			<assignedPerson>
+				<name>
+					<given>integrate_adm</given>
+					<family/>
+				</name>
+			</assignedPerson>
+		</assignedAuthor>
+	</author>
+	<component>
+		<structuredBody>
+			<component>
+				<section>
+					<title/>
+					<text>
+						<table>
+							<thead>
+								<tr>
+									<th>Attribute</th>
+									<th>Value</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>Care Group</th>
+									<td>Documentation</td>
+								</tr>
+								<tr>
+									<th>Confidentiality</th>
+									<td>Normal</td>
+								</tr>
+								<tr>
+									<th>Reason</th>
+									<td>Admin Document</td>
+								</tr>
+								<tr>
+									<th>General Comment</th>
+									<td>No Comment</td>
+								</tr>
+								<tr>
+									<th>Practice Setting</th>
+									<td>General Care</td>
+								</tr>
+							</tbody>
+						</table>
+						<table>
+							<tbody>
+								<tr>
+									<td>The content was acquired by Mobile Device using a digital device.  The content is intended to document patient condition and is not intended for medical diagnostic purposes.</td>
+								</tr>
+							</tbody>
+						</table>
+					</text>
+				</section>
+			</component>
+		</structuredBody>
+	</component>
+</ClinicalDocument>

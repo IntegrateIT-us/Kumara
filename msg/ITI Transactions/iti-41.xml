@@ -1,0 +1,224 @@
+<!-- ITI-41 Provide and Register Document Set Request -->
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns4:ProvideAndRegisterDocumentSetRequest xmlns:ns6="urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0" xmlns:ns5="urn:oasis:names:tc:ebxml-regrep:xsd:lcm:3.0" xmlns:xds="http://www.openehealth.org/ipf/xds" xmlns:ns2="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" xmlns:ns4="urn:ihe:iti:xds-b:2007" xmlns:ns3="urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0">
+	<ns5:SubmitObjectsRequest comment="XDS_b Submission">
+		<ns2:RegistryObjectList>
+			<ns2:ExtrinsicObject mimeType="application/pdf" objectType="urn:uuid:7edca82f-054d-47f2-a032-9b2a5b5186c1" id="Document01">
+				<ns2:Slot name="creationTime">
+					<ns2:ValueList>
+						<ns2:Value>20180404093708</ns2:Value>
+					</ns2:ValueList>
+				</ns2:Slot>
+				<ns2:Slot name="languageCode">
+					<ns2:ValueList>
+						<ns2:Value>en-US</ns2:Value>
+					</ns2:ValueList>
+				</ns2:Slot>
+				<ns2:Slot name="serviceStartTime">
+					<ns2:ValueList>
+						<ns2:Value>20180404093708</ns2:Value>
+					</ns2:ValueList>
+				</ns2:Slot>
+				<ns2:Slot name="serviceStopTime">
+					<ns2:ValueList>
+						<ns2:Value>20180404093708</ns2:Value>
+					</ns2:ValueList>
+				</ns2:Slot>
+				<ns2:Slot name="sourcePatientId">
+					<ns2:ValueList>
+						<ns2:Value>751006179^^^&amp;2.16.840.1.113883.10.999.1.3.11.13.1.8.2&amp;ISO</ns2:Value>
+					</ns2:ValueList>
+				</ns2:Slot>
+				<ns2:Slot name="sourcePatientInfo">
+					<ns2:ValueList>
+						<ns2:Value>PID-3|751006179^^^&amp;2.16.840.1.113883.10.999.1.3.11.13.1.8.2&amp;ISO</ns2:Value>
+						<ns2:Value>PID-5|TEST^BENJAMIN</ns2:Value>
+						<ns2:Value>PID-7|19860314</ns2:Value>
+						<ns2:Value>PID-8|M</ns2:Value>
+						<ns2:Value>PID-11|null^null^null^null</ns2:Value>
+					</ns2:ValueList>
+				</ns2:Slot>
+				<ns2:Slot name="urn:ihe:iti:xds:2013:referenceIdList">
+					<ns2:ValueList>
+						<ns2:Value>324767350^^^&amp;2.16.840.1.113883.10.999.1.3.11.13.1.8.2&amp;ISO^urn:ihe:iti:xds:2013:accession</ns2:Value>
+					</ns2:ValueList>
+				</ns2:Slot>
+				<ns2:Name>
+					<ns2:LocalizedString value="HUMPHREY 24-2 VISUAL FIELD"/>
+				</ns2:Name>
+				<ns2:Classification classificationScheme="urn:uuid:93606bcf-9494-43ec-9b4e-a7748d1a838d" classifiedObject="Document01" nodeRepresentation="" id="urn:uuid:e163b7d9-b469-455e-a521-fc26e42414ad">
+					<ns2:Slot name="authorPerson">
+						<ns2:ValueList>
+							<ns2:Value>Ophthalmology^Doctor^null^^^^^^&amp;2.16.840.1.113883.10.999.1.3.11.13.1.8.2&amp;ISO</ns2:Value>
+						</ns2:ValueList>
+					</ns2:Slot>
+					<ns2:Slot name="authorInstitution">
+						<ns2:ValueList>
+							<ns2:Value>IntegateIT.us Med Center</ns2:Value>
+						</ns2:ValueList>
+					</ns2:Slot>
+					<ns2:Slot name="authorRole">
+						<ns2:ValueList>
+							<ns2:Value>Attending</ns2:Value>
+						</ns2:ValueList>
+					</ns2:Slot>
+					<ns2:Slot name="authorSpecialty">
+						<ns2:ValueList>
+							<ns2:Value>authorSpeciality</ns2:Value>
+						</ns2:ValueList>
+					</ns2:Slot>
+				</ns2:Classification>
+				<ns2:Classification classificationScheme="urn:uuid:41a5887f-8865-4c09-adf7-e362475b143a" classifiedObject="Document01" nodeRepresentation="100" id="urn:uuid:05ea8568-a2fd-4493-8a26-39fba376b9ea">
+					<ns2:Slot name="codingScheme">
+						<ns2:ValueList>
+							<ns2:Value>2.16.840.1.113883.10.999.1.3.13.100.1.100.2.1.3.3</ns2:Value>
+						</ns2:ValueList>
+					</ns2:Slot>
+					<ns2:Name>
+						<ns2:LocalizedString value="Report"/>
+					</ns2:Name>
+				</ns2:Classification>
+				<ns2:Classification classificationScheme="urn:uuid:f4f85eac-e6cb-4883-b524-f2705394840f" classifiedObject="Document01" nodeRepresentation="N" id="urn:uuid:e0082fff-f677-412c-b9b3-881825e1c3d4">
+					<ns2:Slot name="codingScheme">
+						<ns2:ValueList>
+							<ns2:Value>2.16.840.1.113883.5.25</ns2:Value>
+						</ns2:ValueList>
+					</ns2:Slot>
+					<ns2:Name>
+						<ns2:LocalizedString value="Normal"/>
+					</ns2:Name>
+				</ns2:Classification>
+				<ns2:Classification classificationScheme="urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4" classifiedObject="Document01" nodeRepresentation="OT" id="urn:uuid:cf7594ad-ea50-4f3d-8f5d-c7f57c25d782">
+					<ns2:Slot name="codingScheme">
+						<ns2:ValueList>
+							<ns2:Value>1.2.840.10008.2.16.4</ns2:Value>
+						</ns2:ValueList>
+					</ns2:Slot>
+					<ns2:Name>
+						<ns2:LocalizedString value="Other Modality"/>
+					</ns2:Name>
+				</ns2:Classification>
+				<ns2:Classification classificationScheme="urn:uuid:a09d5840-386c-46f2-b5ad-9c3699a4309d" classifiedObject="Document01" nodeRepresentation="urn:ihe:rad:PDF" id="urn:uuid:b9c61fa5-7f8b-4925-a7ce-9978e416a41a">
+					<ns2:Slot name="codingScheme">
+						<ns2:ValueList>
+							<ns2:Value>1.3.6.1.4.1.19376.1.2.3</ns2:Value>
+						</ns2:ValueList>
+					</ns2:Slot>
+					<ns2:Name>
+						<ns2:LocalizedString value="PDF Report (XDS-I.b)"/>
+					</ns2:Name>
+				</ns2:Classification>
+				<ns2:Classification classificationScheme="urn:uuid:f33fb8ac-18af-42cc-ae0e-ed0b0bdb91e1" classifiedObject="Document01" nodeRepresentation="ITUS" id="urn:uuid:78179abd-d365-4ef0-ac9a-ba20bfc64e9b">
+					<ns2:Slot name="codingScheme">
+						<ns2:ValueList>
+							<ns2:Value>2.16.840.1.113883.10.999.1.3.13.100.1.100.2.1.3.4</ns2:Value>
+						</ns2:ValueList>
+					</ns2:Slot>
+					<ns2:Name>
+						<ns2:LocalizedString value="IntegateIT.us Med Center"/>
+					</ns2:Name>
+				</ns2:Classification>
+				<ns2:Classification classificationScheme="urn:uuid:cccf5598-8b07-4b77-a05e-ae952c785ead" classifiedObject="Document01" nodeRepresentation="OPH" id="urn:uuid:b7790fb0-80bf-4e23-af7c-b91ddbe7e50c">
+					<ns2:Slot name="codingScheme">
+						<ns2:ValueList>
+							<ns2:Value>2.16.840.1.113883.10.999.1.3.13.100.1.100.2.1.3.5</ns2:Value>
+						</ns2:ValueList>
+					</ns2:Slot>
+					<ns2:Name>
+						<ns2:LocalizedString value="Ophthalmology"/>
+					</ns2:Name>
+				</ns2:Classification>
+				<ns2:Classification classificationScheme="urn:uuid:f0306f51-975f-434e-a61c-c59651d33983" classifiedObject="Document01" nodeRepresentation="102240029208301" id="urn:uuid:f789f559-b2b1-4146-9497-1e7f0c92328d">
+					<ns2:Slot name="codingScheme">
+						<ns2:ValueList>
+							<ns2:Value>2.16.840.1.113883.10.999.1.3.13.100.1.100.2.1.3.17</ns2:Value>
+						</ns2:ValueList>
+					</ns2:Slot>
+					<ns2:Name>
+						<ns2:LocalizedString value="HUMPHREY 24-2 VISUAL FIELD"/>
+					</ns2:Name>
+				</ns2:Classification>
+				<ns2:ExternalIdentifier registryObject="Document01" identificationScheme="urn:uuid:58a6f841-87b3-4a3e-92fd-a8ffeff98427" value="50628407^^^&amp;2.16.840.1.113883.10.999.1.3.11.1.1.8.1&amp;ISO" id="urn:uuid:139fe1ea-e6f9-43c1-b3ed-c5c7c83b90c3">
+					<ns2:Name>
+						<ns2:LocalizedString value="XDSDocumentEntry.patientId"/>
+					</ns2:Name>
+				</ns2:ExternalIdentifier>
+				<ns2:ExternalIdentifier registryObject="Document01" identificationScheme="urn:uuid:2e82c1f6-a085-4c72-9da3-8640a32e42ab" value="2.16.840.1.113883.10.999.13.14.1.107271062.324767350" id="urn:uuid:d48f66cb-f091-4e70-8288-75f72cb711f4">
+					<ns2:Name>
+						<ns2:LocalizedString value="XDSDocumentEntry.uniqueId"/>
+					</ns2:Name>
+				</ns2:ExternalIdentifier>
+			</ns2:ExtrinsicObject>
+			<ns2:RegistryPackage id="SubmissionSet01">
+				<ns2:Slot name="submissionTime">
+					<ns2:ValueList>
+						<ns2:Value>20180404093713</ns2:Value>
+					</ns2:ValueList>
+				</ns2:Slot>
+				<ns2:Name>
+					<ns2:LocalizedString value="Physical"/>
+				</ns2:Name>
+				<ns2:Classification classificationScheme="urn:uuid:a7058bb9-b4e4-4307-ba5b-e3f0ab85e12d" classifiedObject="SubmissionSet01" nodeRepresentation="" id="urn:uuid:a00715ac-9de6-47bd-b199-752c1f73ed7f">
+					<ns2:Slot name="authorPerson">
+						<ns2:ValueList>
+							<ns2:Value>null^null^null^^^^^^&amp;2.16.840.1.113883.10.999.1.3.11.13.1.8.2&amp;ISO</ns2:Value>
+						</ns2:ValueList>
+					</ns2:Slot>
+					<ns2:Slot name="authorInstitution">
+						<ns2:ValueList>
+							<ns2:Value>IntegateIT.us Med Center</ns2:Value>
+						</ns2:ValueList>
+					</ns2:Slot>
+					<ns2:Slot name="authorRole">
+						<ns2:ValueList>
+							<ns2:Value>Attending</ns2:Value>
+						</ns2:ValueList>
+					</ns2:Slot>
+					<ns2:Slot name="authorSpecialty">
+						<ns2:ValueList>
+							<ns2:Value>authorSpeciality</ns2:Value>
+						</ns2:ValueList>
+					</ns2:Slot>
+				</ns2:Classification>
+				<ns2:Classification classificationScheme="urn:uuid:aa543740-bdda-424e-8c96-df4873be8500" classifiedObject="SubmissionSet01" nodeRepresentation="28619-5" id="urn:uuid:5d473951-494e-4636-82e5-6a38c47b62f5">
+					<ns2:Slot name="codingScheme">
+						<ns2:ValueList>
+							<ns2:Value>2.16.840.1.113883.6.1</ns2:Value>
+						</ns2:ValueList>
+					</ns2:Slot>
+					<ns2:Name>
+						<ns2:LocalizedString value="Ophthalmology/Optometry studies"/>
+					</ns2:Name>
+				</ns2:Classification>
+				<ns2:ExternalIdentifier registryObject="SubmissionSet01" identificationScheme="urn:uuid:96fdda7c-d067-4183-912e-bf5ee74998a8" value="2.16.840.1.113883.10.999.13.14.1.107271062.324767350.1" id="urn:uuid:e93603d6-594a-41ce-9ed1-c9e18a681142">
+					<ns2:Name>
+						<ns2:LocalizedString value="XDSSubmissionSet.uniqueId"/>
+					</ns2:Name>
+				</ns2:ExternalIdentifier>
+				<ns2:ExternalIdentifier registryObject="SubmissionSet01" identificationScheme="urn:uuid:554ac39e-e3fe-47fe-b233-965d2a147832" value="2.16.840.1.113883.10.999.1.3.13.100.1.100.2.10.1" id="urn:uuid:78bff9df-f1cc-4796-bacf-1756fb005385">
+					<ns2:Name>
+						<ns2:LocalizedString value="XDSSubmissionSet.sourceId"/>
+					</ns2:Name>
+				</ns2:ExternalIdentifier>
+				<ns2:ExternalIdentifier registryObject="SubmissionSet01" identificationScheme="urn:uuid:6b5aea1a-874d-4603-a4bc-96a0a7b38446" value="50628407^^^&amp;2.16.840.1.113883.10.999.1.3.11.1.1.8.1&amp;ISO" id="urn:uuid:6beea569-0a40-4ffe-bab9-83102ba7a1ee">
+					<ns2:Name>
+						<ns2:LocalizedString value="XDSSubmissionSet.patientId"/>
+					</ns2:Name>
+				</ns2:ExternalIdentifier>
+			</ns2:RegistryPackage>
+			<ns2:Classification classifiedObject="SubmissionSet01" classificationNode="urn:uuid:a54d6aa5-d40d-43f9-88c5-b4633d873bdd" id="urn:uuid:bb548b3a-4b3e-49c1-82e0-a0af2db8aafe"/>
+			<ns2:Association associationType="urn:oasis:names:tc:ebxml-regrep:AssociationType:HasMember" sourceObject="SubmissionSet01" targetObject="Document01" id="urn:uuid:e308f0fe-c2e6-4d09-be29-fed6c31f0b3d">
+				<ns2:Slot name="SubmissionSetStatus">
+					<ns2:ValueList>
+						<ns2:Value>Original</ns2:Value>
+					</ns2:ValueList>
+				</ns2:Slot>
+			</ns2:Association>
+	<ns4:Document id="Document01">JVBERi0xLjcNCiW1tbW1DQoxIDAgb2JqDQo8PC9UeXBlL0NhdGFsb2cvUGFnZXMgMiAwIFIvTGFuZyhlbi1VUykgL1N0cnVjdFRyZWVSb290IDEwIDAgUi9NYXJrSW5mbzw8L01hcmtlZCB0cnVlPj4vTWV0YWRhdGEgMjQgMCBSL1ZpZXdlclByZWZlcmVuY2VzIDI1IDAgUj4+DQplbmRvYmoNCjIgMCBvYmoNCjw8L1R5cGUvUGFnZXMvQ291b...c5QTg0MEFBMjM3Qzg1REQ4RTdBRTA+XSAvUHJldiAxNjc2NjUvWFJlZlN0bSAxNjczNjg+Pg0Kc3RhcnR4cmVmDQoxNjgzNjINCiUlRU9GAA==</ns4:Document>
+</ns4:ProvideAndRegisterDocumentSetRequest>
+
+<!-- ITI-41 Provide and Register Document Set Response -->
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns3:RegistryResponse status="urn:oasis:names:tc:ebxml-regrep:ResponseStatusType:Success" xmlns:ns6="urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0" xmlns:ns5="urn:oasis:names:tc:ebxml-regrep:xsd:lcm:3.0" xmlns:xds="http://www.openehealth.org/ipf/xds" xmlns:ns2="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" xmlns:ns4="urn:ihe:iti:xds-b:2007" xmlns:ns3="urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0"/>
+		</ns2:RegistryObjectList>
+	</ns5:SubmitObjectsRequest>
